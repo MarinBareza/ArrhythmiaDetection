@@ -1,3 +1,5 @@
+import math
+
 import numpy as np
 
 
@@ -10,5 +12,4 @@ def map_peak_annotations(peaks, annons):
 
     peaks = peaks[:, np.newaxis]
     symbols = symbols[:, np.newaxis]
-    peaks = np.concatenate((peaks, symbols), axis=1)
-    return peaks
+    return np.concatenate((peaks, symbols), axis=1)
